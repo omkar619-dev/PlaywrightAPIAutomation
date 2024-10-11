@@ -4,16 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2e994d1-7fb6-4fa0-aa94-bf0852733c9c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/dsa/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/test/APIDispose.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/test/GETAPI.java" afterDir="false" />
+    <list default="true" id="c2e994d1-7fb6-4fa0-aa94-bf0852733c9c" name="Changes" comment="GET API fix">
+      <change afterPath="$PROJECT_DIR$/src/test/data/user.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/test/APIResponseHeaders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/test/CreateUserTestWithString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/test/CreateUserWithJsonfile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/test/POSTAPI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,9 +29,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 8
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2nD6XTpzNmkumXecnUMmMTdzn6V" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -44,9 +43,15 @@
     "Application.Main.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.APIDispose.disposeAPIResponse.executor": "Run",
+    "TestNG.APIResponseHeaders.headersTest.executor": "Run",
+    "TestNG.CreateUserTestWithString.executor": "Run",
+    "TestNG.CreateUserWithJsonfile.POSTResponse.executor": "Run",
+    "TestNG.CreateUserWithJsonfile.executor": "Run",
     "TestNG.GETAPI.executor": "Run",
     "TestNG.GETAPI.getUsersWithParams.executor": "Run",
     "TestNG.GETAPI.getusers.executor": "Run",
+    "TestNG.POSTAPI.POSTResponse.executor": "Run",
+    "TestNG.POSTAPI.executor": "Run",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -58,26 +63,19 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.APIDispose.disposeAPIResponse">
-    <configuration name="APIDispose.disposeAPIResponse" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIPlaywright" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api.test" />
-      <option name="MAIN_CLASS_NAME" value="com.api.test.APIDispose" />
-      <option name="METHOD_NAME" value="disposeAPIResponse" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
+  <component name="RunManager" selected="TestNG.CreateUserWithJsonfile.POSTResponse">
+    <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GETAPI" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateUserTestWithString" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIPlaywright" />
       <extension name="coverage">
         <pattern>
@@ -86,7 +84,7 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api.test" />
-      <option name="MAIN_CLASS_NAME" value="com.api.test.GETAPI" />
+      <option name="MAIN_CLASS_NAME" value="com.api.test.CreateUserTestWithString" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -94,7 +92,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GETAPI.getUsersWithParams" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateUserWithJsonfile" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIPlaywright" />
       <extension name="coverage">
         <pattern>
@@ -103,8 +101,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api.test" />
-      <option name="MAIN_CLASS_NAME" value="com.api.test.GETAPI" />
-      <option name="METHOD_NAME" value="getUsersWithParams" />
+      <option name="MAIN_CLASS_NAME" value="com.api.test.CreateUserWithJsonfile" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CreateUserWithJsonfile.POSTResponse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIPlaywright" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api.test" />
+      <option name="MAIN_CLASS_NAME" value="com.api.test.CreateUserWithJsonfile" />
+      <option name="METHOD_NAME" value="POSTResponse" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -112,7 +127,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GETAPI.getusers" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="POSTAPI" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIPlaywright" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +136,25 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api.test" />
-      <option name="MAIN_CLASS_NAME" value="com.api.test.GETAPI" />
-      <option name="METHOD_NAME" value="getusers" />
+      <option name="MAIN_CLASS_NAME" value="com.api.test.POSTAPI" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POSTAPI.POSTResponse" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="APIPlaywright" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.api.test" />
+      <option name="MAIN_CLASS_NAME" value="com.api.test.POSTAPI" />
+      <option name="METHOD_NAME" value="POSTResponse" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -132,10 +164,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.APIDispose.disposeAPIResponse" />
-        <item itemvalue="TestNG.GETAPI" />
-        <item itemvalue="TestNG.GETAPI.getUsersWithParams" />
-        <item itemvalue="TestNG.GETAPI.getusers" />
+        <item itemvalue="TestNG.CreateUserWithJsonfile.POSTResponse" />
+        <item itemvalue="TestNG.CreateUserWithJsonfile" />
+        <item itemvalue="TestNG.CreateUserTestWithString" />
+        <item itemvalue="TestNG.POSTAPI" />
+        <item itemvalue="TestNG.POSTAPI.POSTResponse" />
       </list>
     </recent_temporary>
   </component>
@@ -155,11 +188,26 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1728495340777</updated>
-      <workItem from="1728495341898" duration="12802000" />
+      <workItem from="1728495341898" duration="13747000" />
+      <workItem from="1728617620470" duration="456000" />
+      <workItem from="1728618093528" duration="6133000" />
     </task>
+    <task id="LOCAL-00001" summary="GET API fix">
+      <option name="closed" value="true" />
+      <created>1728588005398</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1728588005399</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="GET API fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="GET API fix" />
   </component>
 </project>
