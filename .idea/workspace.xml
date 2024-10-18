@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="c2e994d1-7fb6-4fa0-aa94-bf0852733c9c" name="Changes" comment="JSON file and JSON String">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/data/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/test/CreateUserTestwithPojoClass.java" afterDir="false" />
+    <list default="true" id="c2e994d1-7fb6-4fa0-aa94-bf0852733c9c" name="Changes" comment="POJO CLASS POST API CALL">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/data/PlaywrightBasics.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/api/data/UserLombok.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/api/test/CreatePostCallwithLombok.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/dsa/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,9 +38,11 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
+    "Application.PlaywrightBasics.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "TestNG.APIDispose.disposeAPIResponse.executor": "Run",
     "TestNG.APIResponseHeaders.headersTest.executor": "Run",
+    "TestNG.CreatePostCallwithLombok.executor": "Run",
     "TestNG.CreateUserTestWithString.executor": "Run",
     "TestNG.CreateUserTestwithPojoClass.POSTResponse.executor": "Run",
     "TestNG.CreateUserTestwithPojoClass.executor": "Run",
@@ -62,7 +65,20 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="TestNG.CreateUserTestwithPojoClass.POSTResponse">
+  <component name="RunManager" selected="TestNG.CreatePostCallwithLombok">
+    <configuration name="PlaywrightBasics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.api.data.PlaywrightBasics" />
+      <module name="APIPlaywright" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.api.data.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <method v="2">
         <option name="Make" enabled="true" />
@@ -74,16 +90,16 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateUserTestWithString" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreatePostCallwithLombok" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIPlaywright" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.api.data.*" />
+          <option name="PATTERN" value="com.api.test.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.api.test" />
-      <option name="MAIN_CLASS_NAME" value="com.api.test.CreateUserTestWithString" />
+      <option name="MAIN_CLASS_NAME" value="com.api.test.CreatePostCallwithLombok" />
       <option name="TEST_OBJECT" value="CLASS" />
       <properties />
       <listeners />
@@ -126,23 +142,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreateUserWithJsonfile" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="APIPlaywright" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.api.data.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.api.test" />
-      <option name="MAIN_CLASS_NAME" value="com.api.test.CreateUserWithJsonfile" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CreateUserWithJsonfile.POSTResponse" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="APIPlaywright" />
       <extension name="coverage">
@@ -163,11 +162,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.CreatePostCallwithLombok" />
+        <item itemvalue="Application.PlaywrightBasics" />
         <item itemvalue="TestNG.CreateUserTestwithPojoClass.POSTResponse" />
         <item itemvalue="TestNG.CreateUserTestwithPojoClass" />
         <item itemvalue="TestNG.CreateUserWithJsonfile.POSTResponse" />
-        <item itemvalue="TestNG.CreateUserWithJsonfile" />
-        <item itemvalue="TestNG.CreateUserTestWithString" />
       </list>
     </recent_temporary>
   </component>
@@ -190,7 +189,8 @@
       <workItem from="1728495341898" duration="13747000" />
       <workItem from="1728617620470" duration="456000" />
       <workItem from="1728618093528" duration="6558000" />
-      <workItem from="1728633587497" duration="3443000" />
+      <workItem from="1728633587497" duration="4645000" />
+      <workItem from="1728716350398" duration="2984000" />
     </task>
     <task id="LOCAL-00001" summary="GET API fix">
       <option name="closed" value="true" />
@@ -208,7 +208,15 @@
       <option name="project" value="LOCAL" />
       <updated>1728628557317</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="POJO CLASS POST API CALL">
+      <option name="closed" value="true" />
+      <created>1728673931563</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1728673931563</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -217,6 +225,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="GET API fix" />
     <MESSAGE value="JSON file and JSON String" />
-    <option name="LAST_COMMIT_MESSAGE" value="JSON file and JSON String" />
+    <MESSAGE value="POJO CLASS POST API CALL" />
+    <option name="LAST_COMMIT_MESSAGE" value="POJO CLASS POST API CALL" />
   </component>
 </project>
